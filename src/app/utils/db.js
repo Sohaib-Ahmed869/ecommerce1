@@ -9,12 +9,6 @@ async function connectToDb() {
     .connect(
       "mongodb+srv://sohaibsipra869:nvidia940MX@cluster0.dcrk8mp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     )
-    .then(() => {
-      console.log("Connected to database");
-    })
-    .catch((error) => {
-      console.log(error);
-    });
 }
 
 export default connectToDb;
